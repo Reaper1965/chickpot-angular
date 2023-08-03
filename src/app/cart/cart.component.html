@@ -1,0 +1,24 @@
+<table class="table table-bordered table-hovered">
+    <tr>
+        <th>Sno</th>
+        <th>Item</th>
+        <th>Product Details</th>
+        <th>Product price</th>
+        <th>Product image</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let food of Foods">
+        <td>{{food.id}}</td>
+        <td>{{food.name}}</td>
+        <td>{{food.origins}}</td>
+        <td>{{food.price}}</td>
+        <td><img [src]="food.imageUrl" class="img-fluid" height="150" width="200"></td>
+        <td><button class="btn btn-link" ></button></td>
+        <td><button class="btn btn-link" (click)="del(food)"><i class="fa-solid fa-trash"></i></button></td>
+    </tr>
+    </table>
+    <div class="row">
+        <div class="col-md-6">
+        <button class="btn btn-info" (click)="check()" style="margin-left: 700px;">Checkout</button>
+        </div>
+    </div>

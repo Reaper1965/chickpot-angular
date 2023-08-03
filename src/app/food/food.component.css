@@ -1,0 +1,61 @@
+ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+ul li a
+{
+    height: 25rem;
+    width: 20rem;
+    border: 1px solid whitesmoke;
+    border-radius: 1em;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #e72929;
+}
+li a:hover
+{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.product-item-footer
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.origins
+{
+    flex: 9 3;
+}
+.origins span
+{
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    color: gray;
+    font-size: .9rem;
+    margin-right: .3rem;
+    display: inline-block;
+}
+.cook-time
+{
+    font-size: .8rem;
+    flex: 3;
+    text-align: center;
+}
+.price
+{
+    color: grey;
+    margin-top: .3rem;
+}
+h5
+{
+    font-weight: 700;
+    font-family: 'Lucida calligraphy';
+}

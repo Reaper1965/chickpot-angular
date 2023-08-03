@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    <video autoplay muted plays-inline class="background">
+        <source src="assets/video.mp4" type="video/mp4">
+    </video>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4 d-flex justify-content-end" style="margin-top: 180px; margin-left: -80px;" id="login">
+            <div class="">
+                <form action="" name="form" (ngSubmit)="f.form.valid && dologin()" #f="ngForm">
+                    <div class="form-group">
+                        <label for="" class="form-label">username</label>
+                        <input type="text" name="username" id="" class="form-control" [(ngModel)]="username"
+                            #unam="ngModel" required>
+                        <div *ngIf="f.submitted && !unam.valid" class="text-danger">username is required
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="" class="form-label">password</label>
+                        <input for="" class="form-control" name="password" [(ngModel)]="password" #upass="ngModel" required>
+                        <div *ngIf="f.submitted && !upass.valid" class="text-danger"> Enter your valid Password</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Captcha</label>
+                        <input for="" class="form-control" name="captcha" [(ngModel)]="captcha" #ucap="ngModel" required>
+                        <div *ngIf="f.submitted && !ucap.valid" class="text-danger"> Enter your valid Captcha</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">CAPTCHA : {{cappy}}</label>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success" type="submit"
+                            [disabled]="!f.form.valid">LOGIN <i class="fa fa-lock"></i></button>
+                        <button class="btn btn-danger" type="reset"> CANCEL <i class="fa fa-times" aria-hidden="true"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

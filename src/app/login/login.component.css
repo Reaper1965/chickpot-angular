@@ -1,0 +1,24 @@
+label{
+    color: #fff;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+}
+input{
+    width: 350px;
+}
+button
+{
+    margin-left: 10px;
+}
+.background
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#login
+{
+    color: black;
+    position: absolute;
+    left: 850px;
+}

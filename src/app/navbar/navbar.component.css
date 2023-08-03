@@ -1,0 +1,38 @@
+header
+{
+    background-color: #fff;
+    padding: 0;
+    margin-left: -180px;
+    background-color: #b95b5b;
+}
+.logo
+{
+  color: #fff;
+}   
+.logos
+{
+    border-radius: 50%;
+}
+a.logo
+{
+    font-weight: 1000;
+}
+#username
+{
+    color: #fff;
+    font-weight: 700;
+    margin-left: 50px;
+}
+#navbarNav
+{
+    margin-left: -100px;
+}
+.nav-link
+{
+    font-weight: 700;
+    color: wheat;
+}
+.nav-link:hover
+{
+    color:black;
+}

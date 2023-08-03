@@ -1,0 +1,119 @@
+h1
+{
+    margin-top: 15px;
+    color:maroon;
+}
+*
+{
+    overflow:hidden;
+}
+h3
+{
+    margin-left: 50px;
+    font-weight: 600;
+}
+button
+{
+    margin-left: 50px;
+    border-radius: 50px;
+}
+.img-thumbnail
+{
+    border-radius: 20px;
+}
+h6
+{
+    margin-top: 10px;
+    margin-left: 15px;
+    font-weight: 550;
+}
+h4
+{
+    font-weight: 550;
+}
+.col-md-2
+{
+    margin-left: 65px;
+    font-weight: 600;
+}
+.col-md-8
+{
+    margin-left: 230px;
+}
+h5
+{
+    font-weight: 700;
+    font-family: 'Lucida calligraphy' ;
+}
+#haa
+{
+    margin-left: 250px;
+}
+.col-md-4
+{
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+.col-md-4 img
+{
+    transition: transform 0.3s;
+    object-fit: cover;
+    width: 100%;
+}
+.col-md-4:hover img 
+{
+    transform: scale(1.3);
+}
+
+/*--------------------------count------------------------*/
+
+section.counting{
+	padding: 70px 13%;
+	height: 20vh;
+}
+.wrapper1{
+	position: absolute;
+	transform: translate(-50% -50%);
+	width: 70vw;
+	display: flex;
+	justify-content: space-around;
+	gap: 60px;
+
+}
+.container1{
+	width: 28vmin;
+	height: 30vmin;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	justify-content: space-around;
+	font-size: 16px;
+	border-radius: 10px;
+	background-color:white;
+    border: 1px solid rgb(213, 210, 210);
+	border-bottom: 3px solid green;
+
+}
+.container1 i{
+	
+	font-size: 30px;
+	text-align: center;
+    border-radius:10px;
+}
+span.num1{
+	color:black;
+	display: grid;
+	place-items: center;
+	font-weight: 600;
+	font-size: 40px;
+}
+span.text{
+	color: black;
+	font-size: 16px;
+	text-align: center;
+	pad: 10px 0;
+	font-weight: 400;
+	line-height: 0;
+}

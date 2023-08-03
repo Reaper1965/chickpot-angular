@@ -1,0 +1,31 @@
+<header class="position-sticky sticky-top">
+  <div class="container">
+      <a href="#" routerLink="/user/Home" class="logo"><img class="logos" src="assets/logo.png" height="50" width="50"> ChickPot🤩 Food Corner </a>
+      <nav class="navbar navbar-expand-lg navbar-light position-sticky sticky-top d-flex">
+        <a class="navbar-brand" id="username" href="#">!!welcome {{username}}!!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link p-3" routerLink="/user/Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-3" routerLink="/user/Food">Food</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-3" routerLink="/user/Additems">Add items</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-3" routerLink="/user/Cart">Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-3" (click)="signout()">Logout <i class="fa-solid fa-right-from-bracket"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </div>
+</header>
+<router-outlet></router-outlet>
